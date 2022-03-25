@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 </head>
 <body>
     <h1>
@@ -12,7 +13,7 @@
     </h1>
     <ul>
         {% for note in notes %}
-            <li>
+            <li class="note-li">
                 {{note.title}}
             </li>
         {% endfor %}
