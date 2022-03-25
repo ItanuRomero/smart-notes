@@ -1,13 +1,10 @@
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+    Notes List
+{% endblock title %}
+
+{% block content %}
     <h1>
         Notes:
     </h1>
@@ -18,5 +15,4 @@
             </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
